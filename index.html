@@ -8,27 +8,33 @@
     <link rel ="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="first">
     <h1>Converter Temperature</h1>
-    Celcius :<br>
+    Input Celcius :<br>
     <input id="input" type="number" placeholder="">
     <button id="btn" onclick="btnFunction()">Convert</button>
     <h3>Celcius : <span id="Celcius"></span></h3>
     <h3>Farenheit : <span id="Farenheit"></span></h3>
     <h3>Kelvin : <span id="Kelvin"></span></h3>
+    </div>
 
-    Farenheit :<br>
+    <div class="second">
+    Input Farenheit :<br>
     <input id="input1" type="number1" placeholder="">
     <button id="btn1" onclick="btnFunction1()">Convert</button>
     <h3>Celcius : <span id="Celcius1"></span></h3>
     <h3>Farenheit : <span id="Farenheit1"></span></h3>
     <h3>Kelvin : <span id="Kelvin1"></span></h3>
+    </div>
 
-    Kelvin :<br>
+    <div class="third">
+    Input Kelvin :<br>
     <input id="input2" type="number2" placeholder="">
     <button id="btn2" onclick="btnFunction2()">Convert</button>
     <h3>Celcius : <span id="Celcius2"></span></h3>
     <h3>Farenheit : <span id="Farenheit2"></span></h3>
     <h3>Kelvin : <span id="Kelvin2"></span></h3>
+    </div>
 
     <script>
         function btnFunction(){
@@ -64,7 +70,7 @@
         }
 
         function btnFunction2(){
-            var input2 = document.getElementById("input").value;
+            var input2 = document.getElementById("input2").value;
             var celcius2 = input2-273.15;
             var farenheit2 = ((input2-273.15)*1.8)+32;
             var kelvin2 = input2;
